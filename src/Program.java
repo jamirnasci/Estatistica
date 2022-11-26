@@ -1,9 +1,9 @@
-import java.awt.Frame;
+import javax.swing.JFrame;
 
 public class Program {
 
 	public static void main(String[] args) {
-		Frame f = new Frame("Estatistica");
+		JFrame f = new JFrame("Estatistica");
 		Componentes c = new Componentes(f);
 		c.inserirFrame();		
 		Estilo e = new Estilo(c);

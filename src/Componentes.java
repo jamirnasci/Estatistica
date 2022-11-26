@@ -6,24 +6,26 @@ import java.awt.Label;
 import java.awt.TextArea;
 import java.awt.TextField;
 
+import javax.swing.*;
+
 public class Componentes {
-	public Frame f;
+	public JFrame f;
 	
-	public Button calcular = new Button("CALCULAR");
-	public Button limpar = new Button("LIMPAR");
-	public Button adicionar = new Button("Add");
+	public JButton calcular = new JButton("CALCULAR");
+	public JButton limpar = new JButton("LIMPAR");
+	public JButton adicionar = new JButton("Add");
 	
-	public TextField valores = new TextField();
+	public JTextField valores = new JTextField();
 	public TextArea lista = new TextArea();
 	public TextArea areaDesvios = new TextArea();
 	
-	public Label valoresLabel = new Label("Valores: ");
-	public Label media = new Label("Media: ");
-	public Label desvio = new Label("Desvios: ");
-	public Label desvioPadrao = new Label("Desvio Padrão: ");
-	public Label variancia = new Label("Variancia: ");
+	public JLabel valoresLabel = new JLabel("Valores: ");
+	public JLabel media = new JLabel("Media: ");
+	public JLabel desvio = new JLabel("Desvios: ");
+	public JLabel desvioPadrao = new JLabel("Desvio Padrão: ");
+	public JLabel variancia = new JLabel("Variancia: ");
 	
-	public Componentes(Frame fr) {
+	public Componentes(JFrame fr) {
 		f = fr;
 	}
 	
