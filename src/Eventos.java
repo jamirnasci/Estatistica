@@ -30,7 +30,7 @@ public class Eventos {
 				c.media.setText("Media: "+String.format("%.2f",Calculos.media(valNum)));				
 				Calculos.desvio(valNum);
 				c.desvio.setText("Desvios: ");
-				c.desvioPadrao.setText("Desvio Padrão: "+String.format("%.2f",Calculos.desvioPadrao()));
+				c.desvioPadrao.setText("D. Padrão: "+String.format("%.2f",Calculos.desvioPadrao()));
 				c.variancia.setText("Variancia: "+String.format("%.2f",Calculos.variancia()));
 				
 				c.areaDesvios.setText(Calculos.tabelaDesvio);
@@ -59,7 +59,7 @@ public class Eventos {
 
 				c.media.setText("Media: ");
 				c.desvio.setText("Desvios: ");
-				c.desvioPadrao.setText("Desvio Padrão: ");
+				c.desvioPadrao.setText("D. Padrão: ");
 				c.variancia.setText("Variancia: ");	
 				c.areaDesvios.setText("");
 				Calculos.tabelaDesvio = "";

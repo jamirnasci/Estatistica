@@ -20,7 +20,7 @@ public class Calculos {
 		for(double el : lista) {
 			d = Math.abs(el - media);
 			desvios.add(d);
-			tabelaDesvio += "Valor: "+String.format("%.2f", el)+" - - - Media: "+String.format("%.2f",media)+" - - - Desvio: "+String.format("%.2f", d)+"\n";
+			tabelaDesvio += "Valor: \n"+String.format("%.2f", el)+" - - - Media: "+String.format("%.2f",media)+" - - - Desvio: "+String.format("%.2f", d)+"\n\n";
 		}
 	}
 	public static double desvioPadrao() {

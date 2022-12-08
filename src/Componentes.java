@@ -1,10 +1,6 @@
-import java.awt.Button;
 import java.awt.Color;
 import java.awt.Font;
-import java.awt.Frame;
-import java.awt.Label;
 import java.awt.TextArea;
-import java.awt.TextField;
 
 import javax.swing.*;
 
@@ -20,9 +16,10 @@ public class Componentes {
 	public TextArea areaDesvios = new TextArea();
 	
 	public JLabel valoresLabel = new JLabel("Valores: ");
+	public JLabel quadroValores = new JLabel("Quadro de Valores");
 	public JLabel media = new JLabel("Media: ");
 	public JLabel desvio = new JLabel("Desvios: ");
-	public JLabel desvioPadrao = new JLabel("Desvio Padrão: ");
+	public JLabel desvioPadrao = new JLabel("D. Padrão: ");
 	public JLabel variancia = new JLabel("Variancia: ");
 	
 	public Componentes(JFrame fr) {
@@ -30,13 +27,17 @@ public class Componentes {
 	}
 	
 	public void inserirFrame() {
-		f.setSize(400, 700);
+		f.setSize(1000, 400);
+		ImageIcon img = new ImageIcon("data/fundo.png");
+		JLabel label = new JLabel(img);
+		f.setContentPane(label);
+		
+		f.getContentPane().setBackground(Color.white);
 		f.setVisible(true);
 		f.setFont(new Font(Font.SANS_SERIF, Font.PLAIN, 16));
 
 		f.setResizable(false);
 		f.setLayout(null);
-		f.setBackground(Color.white);
 		
 		f.add(media);
 		f.add(desvio);
@@ -49,5 +50,6 @@ public class Componentes {
 		f.add(limpar);
 		f.add(adicionar);
 		f.add(areaDesvios);
+		f.add(quadroValores);
 	}
 }
